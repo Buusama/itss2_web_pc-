@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css'>
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.15/tailwind.min.css'>
+
   <style>
     .bg-texture {
       background-image: url('https://images.unsplash.com/photo-1596387451750-f7bfb51461ef?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2371&q=80');
@@ -42,8 +43,8 @@
       position: absolute;
       top: 50%;
       left: 50%;
-      margin-top: -440px; 
-      margin-left: -195px; 
+      margin-top: -440px;
+      margin-left: -195px;
     }
 
     ::-webkit-scrollbar {
@@ -57,7 +58,7 @@
   <div class="min-h-screen px-10 flex justify-center items-center bg-texture bg-cover pt-20 pb-40 sm:py-0">
     <!-- iPhone -->
     <div id="iphone"
-      class="relative w-[390px] h-[880px] bg-white rounded-[45px] shadow-xl overflow-hidden ring-[8px] ring-black">
+      class="relative w-[390px] h-[885px] bg-white rounded-[45px] shadow-xl overflow-hidden ring-[8px] ring-black">
       <!-- 背景漸層 -->
 
       <!-- iPhone  上方瀏海區塊 -->
@@ -87,12 +88,14 @@
       <!-- Container -->
 
       <div class="iframe-container overflow-hidden">
-        <iframe src="https://financial-fe.vercel.app/" frameborder="0" class="default-background"></iframe>
+        <iframe src="https://financial-fe.vercel.app/" frameborder="0" allowfullscreen="" webkitallowfullscreen="true"
+          mozallowfullscreen="true" oallowfullscreen="true" msallowfullscreen="true"
+          class="default-background"></iframe>
       </div>
 
 
       <!-- Home Indicator -->
-      <div class="absolute w-2/5 h-[5px] rounded-full bg-white mx-auto inset-x-0 bottom-2"></div>
+      <div class="absolute w-2/5 h-[5px] rounded-full bg-black mx-auto inset-x-0 bottom-2"></div>
 
 
     </div>
