@@ -34,6 +34,20 @@
     iframe::-webkit-scrollbar {
       display: none;
     }
+
+    #iphone {
+      transform: scale(0.8);
+      transform-origin: center;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-top: -440px; 
+      margin-left: -195px; 
+    }
+
+    ::-webkit-scrollbar {
+      display: none;
+    }
   </style>
 
 </head>
@@ -41,7 +55,8 @@
 <body>
   <div class="min-h-screen px-10 flex justify-center items-center bg-texture bg-cover pt-20 pb-40 sm:py-0">
     <!-- iPhone -->
-    <div class="relative w-[390px] h-[880px] bg-white rounded-[45px] shadow-xl overflow-hidden ring-[8px] ring-black">
+    <div id="iphone"
+      class="relative w-[390px] h-[880px] bg-white rounded-[45px] shadow-xl overflow-hidden ring-[8px] ring-black">
       <!-- 背景漸層 -->
 
       <!-- iPhone  上方瀏海區塊 -->
